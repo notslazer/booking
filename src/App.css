@@ -1,0 +1,77 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: url('C:\Users\Harshadh\Downloads\beach_bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app h1 {
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.box {
+  background-color: rgba(240, 240, 240, 0.8);
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.controls select, .controls input, .controls button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+}
+
+.controls button {
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+.summary {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(17, 8, 8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
